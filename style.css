@@ -69,13 +69,14 @@ body {
 }
 
 .main-button {
-  background-color: #151c42;
+  background-color: #8385b1;
   color: #f6f4eb;
   border: none;
   border-radius: 13px;
   padding: 15px 30px;
   font-size: 31pt;
   cursor: pointer;
+  font-family: "neucha", serif;
 }
 
 .main-footer {
