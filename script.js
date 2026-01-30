@@ -1,7 +1,7 @@
 window.onload = menu
 
 function menu() {
-  document.getElementById("output").innerHTML=`<span style="width: 700px; display: block; margin: 0 auto;">
+  document.getElementById("output").innerHTML=`<span style="width: 600px; display: block; margin: 0 auto; padding: 31px;">
   <button onclick="cryptanalysis()" class="main-button" style="float: left;">Cryptanalysis</button><div class="main-clear"></div>
   <button onclick="utilities()" class="main-button" style="float: right;">Utilities</button></br><div class="main-clear"></div>
   <button onclick="games()" class="main-button" style="float: left;">Games</button><div class="main-clear"></div>
