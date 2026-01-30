@@ -53,15 +53,10 @@ body {
 
 .main-body pre {
   display: block;
-  width: 900px;
-  max-width: 900px;
+  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   font-family: "neucha", serif;
-  color: #8385b1;
-  width: 900px;
-  margin: 0 auto;
-  text-align: justify;
-  font-size: 31pt;
 }
 
 .main-footer {
