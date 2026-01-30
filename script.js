@@ -10,3 +10,7 @@ function menu() {
   <button onclick="comments()" class="main-button">Comments</button>
   </span>`;
 }
+
+function comments() {
+  window.location.replace("https://scratch.mit.edu/users/kpoovakan#comments");
+}
