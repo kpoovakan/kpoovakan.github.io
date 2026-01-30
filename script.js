@@ -12,5 +12,5 @@ function menu() {
 }
 
 function comments() {
-  window.location.replace("https://scratch.mit.edu/users/kpoovakan#comments");
+  window.location.href("https://scratch.mit.edu/users/kpoovakan#comments");
 }
