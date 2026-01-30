@@ -12,10 +12,22 @@ body {
   src: url("wizardry.ttf") format:("truetype");
   font-weight: normal;
   font-style: normal;
+  font-family: "neucha";
+  src: url("neucha.ttf") format:("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .main-title {
   font-family: "wizardry", serif;
+  color: #151c42;
+  a:link, a:visited, a:hover {
+    color: #151c42;
+    text-decoration: none;
+  }
+  width: 900px;
+  text-align: center;
+  font-size: 75pt;
 }
 
 .main-body {
@@ -27,6 +39,7 @@ body {
     color: #151c42;
     text-decoration: underline;
   }
+  font-family: "neucha", serif;
   color: #8385b1;
   width: 900px;
   text-align: justify;
@@ -42,6 +55,7 @@ body {
     color: #151c42;
     text-decoration: underline;
   }
+  font-family: "neucha", serif;
   color: #8385b1;
   width: 900px;
   text-align: justify;
