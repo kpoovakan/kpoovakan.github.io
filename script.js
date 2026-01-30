@@ -8,7 +8,7 @@ function menu() {
   <button onclick="spoof()" class="main-button" style="float: right;">Spoof</button></br></br>
   <button onclick="miscellaneous()" class="main-button" style="float: left;">Miscellaneous</button>
   <button onclick="comments()" class="main-button" style="float: right;">Comments</button>
-  </span>`;
+  <div class="main-clear"></div></span>`;
 }
 
 function comments() {
