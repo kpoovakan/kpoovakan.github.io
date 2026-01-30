@@ -51,11 +51,20 @@ body {
   font-size: 31pt;
 }
 
-.main-body pre {
-  display: block;
+.main-body pre,
+#content-target {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  margin: 0; /* avoid extra vertical spacing */
+  /* preserve newlines from the source, but allow wrapping of long runs */
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  /* allow or break very long unbroken sequences (digits) onto next lines */
+  overflow-wrap: anywhere;
+  word-break: break-all; /* fallback to force breaks when needed */
   font-family: "neucha", serif;
 }
 
