@@ -80,6 +80,23 @@ body {
   margin: 0 auto;
 }
 
+.main-text {
+    a:link, a:visited {
+    color: #151c42;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #151c42;
+    text-decoration: underline;
+  }
+  font-family: "neucha", serif;
+  color: #8385b1;
+  width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 20pt;
+}
+
 .main-footer {
     a:link, a:visited {
     color: #151c42;
