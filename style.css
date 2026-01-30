@@ -1,0 +1,53 @@
+/* MAIN WEBSITE HOMEPAGE */
+/* Color palette url: https://coolors.co/151c42-8385b1-bbbddf-e5e0c7-f6f4eb
+In order from dark to light, blue to white. */
+
+body {
+  padding: 15px;
+  background-color: #f6f4eb;
+}
+
+@font-face {
+  font-family: "wizardry";
+  src: url("wizardry.ttf") format:("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-title {
+  font-family: "wizardry", serif;
+}
+
+.main-body {
+    a:link, a:visited {
+    color: #151c42;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #151c42;
+    text-decoration: underline;
+  }
+  color: #8385b1;
+  width: 900px;
+  text-align: justify;
+  font-size: 31pt;
+}
+
+.main-footer {
+    a:link, a:visited {
+    color: #151c42;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #151c42;
+    text-decoration: underline;
+  }
+  color: #8385b1;
+  width: 900px;
+  text-align: justify;
+  font-size: 25pt;
+}
+
+.main-clear {
+  clear: both;
+}
