@@ -9,7 +9,7 @@ fetch(fileUrl)
   })
   .then(data => {
     // 3. Put the text into your HTML element
-    document.getElementById('content-target').textContent = data;
+    document.getElementById('content-target').textContent = data + "...";
   })
   .catch(error => {
     console.error('Error:', error);
