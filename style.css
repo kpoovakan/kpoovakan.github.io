@@ -3,7 +3,7 @@
 In order from dark to light, blue to white. */
 
 body {
-  padding: 15px;
+  padding: 31px;
   background-color: #f6f4eb;
 }
 
@@ -43,6 +43,19 @@ body {
     color: #151c42;
     text-decoration: underline;
   }
+  font-family: "neucha", serif;
+  color: #8385b1;
+  width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 31pt;
+}
+
+.main-body pre {
+  display: block;
+  width: 900px;
+  max-width: 900px;
+  box-sizing: border-box;
   font-family: "neucha", serif;
   color: #8385b1;
   width: 900px;
