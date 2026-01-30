@@ -68,6 +68,16 @@ body {
   font-family: "neucha", serif;
 }
 
+.main-button {
+  background-color: #151c42;
+  color: #f6f4eb;
+  border: none;
+  border-radius: 13px;
+  padding: 15px 30px;
+  font-size: 31pt;
+  cursor: pointer;
+}
+
 .main-footer {
     a:link, a:visited {
     color: #151c42;
