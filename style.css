@@ -23,6 +23,8 @@ body {
 .main-title {
   font-family: "wizardry", serif;
   color: #151c42;
+  width: 900px;
+  margin: 0 auto;
   a:link, a:visited, a:hover {
     color: #151c42;
     text-decoration: none;
@@ -44,6 +46,7 @@ body {
   font-family: "neucha", serif;
   color: #8385b1;
   width: 900px;
+  margin: 0 auto;
   text-align: justify;
   font-size: 31pt;
 }
@@ -60,6 +63,7 @@ body {
   font-family: "neucha", serif;
   color: #8385b1;
   width: 900px;
+  margin: 0 auto;
   text-align: justify;
   font-size: 25pt;
 }
