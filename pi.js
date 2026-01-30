@@ -8,8 +8,9 @@ fetch(fileUrl)
     return response.text(); // Convert the data to plain text
   })
   .then(data => {
-    // 3. Put the text into your HTML element
-    document.getElementById('content-target').textContent = data+"...";
+    // Trim trailing newlines (handles \n and \r\n) so the "..." is appended on the same final line
+    const trimmed = data.replace(/[\r\n]+$/, '');
+    document.getElementById('content-target').textContent = trimmed + '...';
   })
   .catch(error => {
     console.error('Error:', error);
