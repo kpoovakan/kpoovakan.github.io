@@ -14,3 +14,7 @@ function menu() {
 function comments() {
   window.location.href="https://scratch.mit.edu/users/kpoovakan#comments";
 }
+
+function cryptanalysis() {
+  document.getElementById("output").innerHTML=``;
+}
