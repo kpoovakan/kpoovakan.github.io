@@ -50,3 +50,12 @@ function spoof() {
   <p><a href="/craftoartsupplies">Crafto Art Supplies</a></p>
   </span></div>`;
 }
+
+function miscellaneous() {
+  document.getElementById("output").innerHTML=`<div class="main-text"><span style="width:600px; display: block; margin: 13px auto; padding: 31px;">
+  <button onclick="menu()" class="main-small-button">Back to menu</button></br>
+  <p><a href="/reflections">Reflections</a>: create text that seems unreadable until reflected by a mirror.</p>
+  <p><a href="/duowonton">Duowonton</a>: quickly review Indonesian vocabulary.</p>
+  <p><a href="/tofu">Tofu</a>: a simple way to test embedding permissions.</p>
+  </span></div>`;
+}
