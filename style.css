@@ -80,6 +80,18 @@ body {
   margin: 0 auto;
 }
 
+.main-small-button {
+  background-color: #8385b1;
+  color: #f6f4eb;
+  border: none;
+  border-radius: 13px;
+  padding: 13px 20px;
+  font-size: 20pt;
+  cursor: pointer;
+  font-family: "neucha", serif;
+  margin: 13px;
+}
+
 .main-text {
     a:link, a:visited {
     color: #151c42;
