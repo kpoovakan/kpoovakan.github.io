@@ -41,3 +41,12 @@ function games() {
   <p><a href="/pumpkinpi">Pumpkin Pi</a>: how many digits of pi have you memorized?</p>
   </span></div>`;
 }
+
+function spoof() {
+  document.getElementById("output").innerHTML=`<div class="main-text"><span style="width:600px; display: block; margin: 13px auto; padding: 31px;">
+  <button onclick="menu()" class="main-small-button">Back to menu</button></br>
+  <p><a href="/onlinelibrary">Online Library</a></p>
+  <p><a href="/sparklabs">Spark Labs</a></p>
+  <p><a href="/craftoartsupplies">Crafto Art Supplies</a></p>
+  </span></div>`;
+}
