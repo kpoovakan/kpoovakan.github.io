@@ -16,5 +16,7 @@ function comments() {
 }
 
 function cryptanalysis() {
-  document.getElementById("output").innerHTML=``;
+  document.getElementById("output").innerHTML=`<span style="width:600px; display: block; margin: 13px auto; padding: 31px;">
+  <button onclick="menu()" class="main-small-button">Back to menu</button></br>
+  </span>`;
 }
