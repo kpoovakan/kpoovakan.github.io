@@ -33,3 +33,11 @@ function utilities() {
   <p><a href="/MiscellaneousUtilities/OnlineNotebook.html">Online Notebook</a>: a free online notebook, saved locally.</p>
   </span></div>`;
 }
+
+function games() {
+  document.getElementById("output").innerHTML=`<div class="main-text"><span style="width:600px; display: block; margin: 13px auto; padding: 31px;">
+  <button onclick="menu()" class="main-small-button">Back to menu</button></br>
+  <p><a href="/harvest">Harvest</a>: a fun video game set in Ancient Rome.</p>
+  <p><a href="/pumpkinpi">Pumpkin Pi</a>: how many digits of pi have you memorized?</p>
+  </span></div>`;
+}
