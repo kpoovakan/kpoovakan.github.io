@@ -1,4 +1,6 @@
-function fork() {
+window.onload = doufu
+
+function doufu() {
     const pie = await fetch(window.location.href.toLowerCase(), { method: "HEAD" }); {
       if (pie.status !== 404) {
       window.location.replace(window.location.href.toLowerCase());
@@ -21,5 +23,3 @@ function pi() {
        console.error('Error:', error);document.getElementById('content-target').textContent = 'Failed to load file.';
          });
 }
-
-window.onload = fork
