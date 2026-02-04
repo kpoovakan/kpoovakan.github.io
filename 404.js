@@ -1,6 +1,6 @@
 window.onload = doufu
 
-function doufu() {
+async function doufu() {
     const pie = await fetch(window.location.href.toLowerCase(), { method: "HEAD" }); {
       if (pie.status !== 404) {
       window.location.replace(window.location.href.toLowerCase());
