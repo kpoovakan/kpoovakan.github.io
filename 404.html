@@ -4,23 +4,7 @@
     <title>404 Page not found | kpoovakan.github.io</title>
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <script>
-      function pi() {
-        const fileUrl = '/pumpkinpi/pi.txt';
-        fetch(fileUrl)
-          .then(response => {
-            if (!response.ok) throw new Error('File not found');
-            return response.text(); // Convert the data to plain text
-           })
-          .then(data => {
-            const trimmed = data.replace(/[\r\n]+$/, '');
-            document.getElementById('content-target').textContent = trimmed + '...';
-          })
-          .catch(error => {
-            console.error('Error:', error);document.getElementById('content-target').textContent = 'Failed to load file.';
-          });
-      }
-    </script>
+    <script src="/404.js"></script>
   </head>
   <body>
     <div class="main-title">
