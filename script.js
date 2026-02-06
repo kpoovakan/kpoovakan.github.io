@@ -20,7 +20,7 @@ function cryptanalysis() {
   <button onclick="menu()" class="main-small-button">Back to menu</button></br>
   <p><a href="/vigeneretableau">The Vigenère Tableau</a>: encipher and decipher messages using Vigenère's Tableau Cipher. Ciphertext, if written with a valid method, can be deciphered even if the key letter is unknown.</p>
   <p><a href="/caesarcipher">Caesar Cipher</a>: encipher and decipher messages using the Caesar Cipher. Ciphertext can be converted to plaintext even if the key letter is unknown.</p>
-  <p>Can't find what you're looking for? It may have been may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
+  <p>Can't find what you're looking for? It may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
 }
 
 function utilities() {
@@ -29,7 +29,7 @@ function utilities() {
   <p><a href="/MiscellaneousUtilities/WakeLock.html">Wake Lock</a>: prevent device from sleep mode.</p>
   <p><a href="/MiscellaneousUtilities/AskBeforeClosing.html">Ask Before Closing</a>: may prevent applications from closing browser window.</p>
   <p><a href="/MiscellaneousUtilities/WordCountTracker.html">Word Count Tracker</a>: authors can track words written, saved locally.</p>
-  <p>Can't find what you're looking for? It may have been may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
+  <p>Can't find what you're looking for? It may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
 }
 
 function games() {
@@ -37,7 +37,7 @@ function games() {
   <button onclick="menu()" class="main-small-button">Back to menu</button></br>
   <p><a href="/harvest">Harvest</a>: a fun video game set in Ancient Rome.</p>
   <p><a href="/pumpkinpi">Pumpkin Pi</a>: how many digits of pi have you memorized?</p>
-  <p>Can't find what you're looking for? It may have been may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
+  <p>Can't find what you're looking for? It may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
 }
 
 function spoof() {
@@ -46,7 +46,7 @@ function spoof() {
   <p><a href="/onlinelibrary">Online Library</a></p>
   <p><a href="/sparklabs">Spark Labs</a></p>
   <p><a href="/craftoartsupplies">Crafto Art Supplies</a></p>
-  <p>Can't find what you're looking for? It may have been may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
+  <p>Can't find what you're looking for? It may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
 }
 
 function miscellaneous() {
@@ -55,7 +55,7 @@ function miscellaneous() {
   <p><a href="/reflections">Reflections</a>: create text that seems unreadable until reflected by a mirror.</p>
   <p><a href="/duowonton">Duowonton</a>: quickly review Indonesian vocabulary.</p>
   <p><a href="/bypass">Bypass</a>: an experiment, for now.</p>
-  <p>Can't find what you're looking for? It may have been may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
+  <p>Can't find what you're looking for? It may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
 }
 
 function archives() {
