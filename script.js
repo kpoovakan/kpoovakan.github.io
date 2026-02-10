@@ -20,6 +20,7 @@ function cryptanalysis() {
   <button onclick="menu()" class="main-small-button">Back to menu</button></br>
   <p><a href="/vigeneretableau">The Vigenère Tableau</a>: encipher and decipher messages using Vigenère's Tableau Cipher. Ciphertext, if written with a valid method, can be deciphered even if the key letter is unknown.</p>
   <p><a href="/caesarcipher">Caesar Cipher</a>: encipher and decipher messages using the Caesar Cipher. Ciphertext can be converted to plaintext even if the key letter is unknown.</p>
+  <p><a href="/a1z26">A1Z26</a>: encipher and decipher messages using the simple but well-known A1Z26 monoalphabetic substitution cipher.</p>
   <p>Can't find what you're looking for? It may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
 }
 
