@@ -47,6 +47,7 @@ function spoof() {
   <p><a href="/onlinelibrary">Online Library</a></p>
   <p><a href="/sparklabs">Spark Labs</a></p>
   <p><a href="/supersnake">Super Snake</a></p>
+  <p><a href="/candyshoppe">The Candy Shoppe</a></p>
   <p><a href="/craftoartsupplies">Crafto Art Supplies</a></p>
   <p>Can't find what you're looking for? It may have been moved to the <a href="javascript:void(0)" onclick="archives()">archives</a>.</p></span></div>`;
 }
