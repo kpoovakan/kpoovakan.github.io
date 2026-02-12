@@ -6,25 +6,20 @@ function patientTruck() {
     const actionType = urlParams.get('action');
     if (actionType === "cryptanalysis") {
       cryptanalysis();
-      return;
     } else if (actionType === "utilities") {
       utilities();
-      return;
     } else if (actionType === "games") {
       games();
-      return;
     } else if (actionType === "spoof") {
       spoof();
-      return;
     } else if (actionType === "miscellaneous") {
       miscellaneous();
-      return;
     } else if (actionType === "archives") {
       archives();
-      return;
     }
-    menu();
+    return;
   }
+  menu();
 }
 
 function menu() {
