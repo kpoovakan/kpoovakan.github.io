@@ -1,4 +1,31 @@
-window.onload = menu
+window.onload = patientTruck
+
+function patientTruck() {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('action')) {
+    const actionType = urlParams.get('action');
+    if (actionType === "cryptanalysis") {
+      cryptanalysis();
+      return;
+    } else if (actionType === "utilities") {
+      utilities();
+      return;
+    } else if (actionType === "games") {
+      games();
+      return;
+    } else if (actionType === "spoof") {
+      spoof();
+      return;
+    } else if (actionType === "miscellaneous") {
+      miscellaneous();
+      return;
+    } else if (actionType === "archives") {
+      archives();
+      return;
+    }
+    menu();
+  }
+}
 
 function menu() {
   document.getElementById("output").innerHTML=`<span style="width: 600px; display: block; margin: 13px auto; padding: 31px;">
