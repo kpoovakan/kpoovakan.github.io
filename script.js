@@ -2,19 +2,19 @@ window.onload = patientTruck
 
 function patientTruck() {
   const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has('action')) {
-    const actionType = urlParams.get('action');
-    if (actionType === "cryptanalysis") {
+  if (urlParams.has("section")) {
+    const sectionRun = urlParams.get("section");
+    if (sectionRun === "cryptanalysis") {
       cryptanalysis();
-    } else if (actionType === "utilities") {
+    } else if (sectionRun === "utilities") {
       utilities();
-    } else if (actionType === "games") {
+    } else if (sectionRun === "games") {
       games();
-    } else if (actionType === "spoof") {
+    } else if (sectionRun === "spoof") {
       spoof();
-    } else if (actionType === "miscellaneous") {
+    } else if (sectionRun === "miscellaneous") {
       miscellaneous();
-    } else if (actionType === "archives") {
+    } else if (sectionRun === "archives") {
       archives();
     }
     return;
