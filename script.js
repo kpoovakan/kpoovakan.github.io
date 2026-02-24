@@ -86,6 +86,7 @@ function miscellaneous() {
 function archives() {
   document.getElementById("output").innerHTML=`<div class="main-text"><span style="width:600px; display: block; margin: 13px auto; padding: 31px;">
   <button onclick="menu()" class="main-small-button">Back to menu</button></br>
+  <p><a href="/scratchpainteditor">Paint And Illustrate</a>: an experiment featuring a simple but well-known paint editor.</p>
   <p><a href="/tofu">Tofu</a>: a simple way to test embedding permissions.</p>
   <p><a href="/MiscellaneousUtilities/UpsideDownText.html">Upside-Down Text</a>: copy upside-down messages to clipboard.</p>
   <p><a href="/MiscellaneousUtilities/OnlineNotebook.html">Online Notebook</a>: a free online notebook, saved locally.</p>
