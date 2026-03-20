@@ -66,6 +66,7 @@ body {
   overflow-wrap: anywhere;
   word-break: break-all; /* fallback to force breaks when needed */
   font-family: "neucha", serif;
+  text-align: center;
 }
 
 .main-button {
