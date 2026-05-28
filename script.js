@@ -67,6 +67,7 @@ function spoof() {
   document.getElementById("output").innerHTML=`<div class="main-text"><span style="width:600px; display: block; margin: 13px auto; padding: 31px;">
   <button onclick="menu()" class="main-small-button">Back to menu</button></br>
   <p><a href="https://kpoovakan.github.io/spoofmaker/">Spoof Maker</a>: create your own Spoofs</p>
+  <p><a href="/rapidracer">Rapid Racer</a></p>
   <p><a href="/supersnake">Super Snake</a></p>
   <p><a href="/candyshoppe">The Candy Shoppe</a></p>
   <p><a href="/craftoartsupplies">Crafto Art Supplies</a></p>
