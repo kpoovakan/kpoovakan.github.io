@@ -49,6 +49,7 @@ function cryptanalysis() {
 function utilities() {
   document.getElementById("output").innerHTML=`<div class="main-text"><span style="width:600px; display: block; margin: 13px auto; padding: 31px;">
   <button onclick="menu()" class="main-small-button">Back to menu</button></br>
+  <p><a href="/stickytab">Stickytab</a>: fully working New Tab page, designed for productivity. Complete with sticky notes and saved sites, stored locally.</p>
   <p><a href="/MiscellaneousUtilities/WakeLock.html">Wake Lock</a>: prevent device from sleep mode.</p>
   <p><a href="/MiscellaneousUtilities/AskBeforeClosing.html">Ask Before Closing</a>: may prevent applications from closing browser window.</p>
   <p><a href="/MiscellaneousUtilities/WordCountTracker.html">Word Count Tracker</a>: authors can track words written, saved locally.</p>
