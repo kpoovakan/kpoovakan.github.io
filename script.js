@@ -78,6 +78,7 @@ function spoof() {
 function miscellaneous() {
   document.getElementById("output").innerHTML=`<div class="main-text"><span style="width:600px; display: block; margin: 13px auto; padding: 31px;">
   <button onclick="menu()" class="main-small-button">Back to menu</button></br>
+  <p><a href="/chopinetudes">ChopinEtudes</a>: a music player with a complete collection for all of Chopin's études.</p>
   <p><a href="/reflections">Reflections</a>: create text that seems unreadable until reflected by a mirror.</p>
   <p><a href="/duowonton">Duowonton</a>: quickly review Indonesian vocabulary.</p>
   <p><a href="/bypass">Bypass</a>: an experiment, for now.</p>
@@ -91,5 +92,6 @@ function archives() {
   <p><a href="/tofu">Tofu</a>: a simple way to test embedding permissions.</p>
   <p><a href="/MiscellaneousUtilities/UpsideDownText.html">Upside-Down Text</a>: copy upside-down messages to clipboard.</p>
   <p><a href="/MiscellaneousUtilities/OnlineNotebook.html">Online Notebook</a>: a free online notebook, saved locally.</p>
+  <p><a href="/baguette">Baguette</a>: a web app for managing commercial bakery orders.</p>
   </span></div>`;
 }
