@@ -70,7 +70,7 @@ function keyEnter(event, thisElement) {
 function toFocus(id, change) {
     const focuses = [
         ["table1","table2"],
-        []
+        ["harvest", "pie", "tableau", "tiles", "stickytab", "spoofmaker", "baguette"]
     ];
     if (change === 0) {
         globalThis.focused = 0;
@@ -78,7 +78,7 @@ function toFocus(id, change) {
         globalThis.focused = globalThis.focused + change;
     }
     if (globalThis.focused < 0) globalThis.focused = 0;
-    if (globalThis.focused > focuses.length) globalThis.focused = focuses.length - 1;
+    if (globalThis.focused > (focuses[id].length) - 1) globalThis.focused = focuses[id].length - 1;
     const thisElement = focuses[id][globalThis.focused];
     document.getElementById(thisElement).focus();
 }
@@ -90,8 +90,15 @@ function screen(id) {
             <span id="table2" tabindex="0">⠀utilities⠀</span>
         </p>`,
         `<h2>featured</h2><div class="itemContainer">
-        <div class="item"><h3>Hello, world!</h3></div>
-        <div class="item">${scratch("1210100138")}</div>
+        <div class="item" tabindex="0" id="harvest">${scratch("1210100138")}<h3>harvest</h3><p>a fun game from Ancient Rome.</p></div>
+        <div class="item" tabindex="0" id="pie">${scratch("1285004431")}<h3>bake a pie</h3><p>silly little pie game!</p></div>
+        <div class="item" tabindex="0" id="tableau">${local("indexfiles/thumbs/vigeneretableau.png")}<h3>vigenère tableau</h3><p>encipher and decipher.</p></div>
+        <div class="item" tabindex="0" id="tiles">${scratch("1351487347")}<h3>tiles</h3><p>a simple logic game featuring tiles.</p></div>
+
+        </div><div class="itemContainer">
+        <div class="item" tabindex="0" id="stickytab"><!--${local("/stickytab/favicon.png")}--><h3>stickytab</h3><p>a fully working New Tab page designed for productivity.</p></div>
+        <div class="item" tabindex="0" id="spoofmaker"><h3>spoofmaker</h3><p>a not-suspicious rickroll maker.</p></div>
+        <div class="item" tabindex="0" id="baguette"><h3>baguette</h3><p>a web app for managing commercial bakeries. all data saved to the cloud.</p></div>
         </div>`
     ];
     if (screens[id] === undefined) return;
@@ -101,5 +108,9 @@ function screen(id) {
 }
 function scratch(id) {
     const thumb = `<img src="https://uploads.scratch.mit.edu/get_image/project/${id}_360x270.png" alt="${id}" style="width: 100%;" />`;
+    return thumb;
+}
+function local(path) {
+    const thumb = `<img src="${path}" alt="${path}" style="width: 100%;" />`
     return thumb;
 }
