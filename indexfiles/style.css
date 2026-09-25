@@ -24,6 +24,12 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+*:focus-visible {
+    border-radius: 3px;
+    border: 3px dotted var(--colorForeground);
+    box-sizing: border-box;
+    outline: none;
+}
 
 .content { /* deprecated */
     background-color: color-mix(in oklab, #00000000 13%, var(--colorBackground));
@@ -47,6 +53,37 @@ h1 {
     transform: translate(-50%, -50%);
     margin: 0;
 }
+h2 {
+    font-family: "neucha", serif;
+    width: 100vw;
+    text-align: center;
+    padding: 13px;
+    font-size: 9vw;
+    text-shadow: var(--colorBackground) 0px 0px 31px;
+    margin: 0;
+}
+h3 {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+.itemContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+    margin: 1vw;
+    padding: 0;
+}
+.item {
+    width: 18vw;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--colorBackground);
+    padding: 13px;
+}
 
 .info {
     background-color: var(--colorBackground);
@@ -64,6 +101,18 @@ h1 {
 .info img{
     vertical-align: center;
     height: 26px;
+}
+.tableContents {
+    background-color: var(--colorBackground);
+    color: var(--colorForeground);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 13px;
 }
 
 .noscript {
