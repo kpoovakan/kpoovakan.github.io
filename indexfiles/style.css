@@ -1,0 +1,69 @@
+:root {
+    --colorBackground: #373347;
+    --colorForeground: #E4DDE1;
+    --colorAccent: #C7A8AC;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--colorBackground);
+    color: var(--colorForeground);
+    display: block;
+    background-image: url(/indexfiles/doradusnebula.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: "neucha", cursive;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: "neucha";
+    src: url("/indexfiles/fonts/neucha.ttf") format ("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content { /* deprecated */
+    background-color: color-mix(in oklab, #00000000 13%, var(--colorBackground));
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 93vw;
+    height: 85vh;
+}
+
+h1 {
+    font-family: "neucha", serif;
+    width: 100vw;
+    text-align: center;
+    font-size: min(314px, 26vw);
+    text-shadow: var(--colorBackground) 0px 0px 31px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.info {
+    background-color: var(--colorBackground);
+    color: var(--colorForeground);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 13px;
+    z-index: 314159;
+}
+.info img{
+    vertical-align: center;
+    height: 26px;
+}
