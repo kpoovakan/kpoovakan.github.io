@@ -69,13 +69,14 @@ function keyEnter(event, thisElement) {
 
 function toFocus(id, change) {
     const focuses = [
-        ["table1", "table2", "table3", "table4", "table5", "table6"],
+        ["table1", "table2", "table3", "table4", "table5", "table6", "table7"],
         ["harvest", "pie", "tableau", "tiles", "stickytab", "spoofmaker", "baguette"],
-        ["stickytab", "abc", "wakelock"],
+        ["stickytab", "tofu", "abc", "wakelock"],
         ["tableau", "caesar", "a1z26"],
         ["harvest", "scratch", "pumpkinpi"],
         ["spoofmaker", "rapidracer", "supersnake", "candyshoppe", "craftoartsupplies"],
-        ["chopinetudes", "duowonton", "wordcount"]
+        ["chopinetudes", "duowonton", "wordcount"],
+        ["baguette", "paint", "notebook", "upsidedowntext"]
     ];
     if (change === 0) {
         globalThis.focused = 0;
@@ -98,6 +99,7 @@ function screen(id) {
             <span id="table4" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=4;screen(4);}">⠀games⠀</span>
             <span id="table5" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=5;screen(5);}">⠀spoof⠀</span>
             <span id="table6" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=6;screen(6);}">⠀miscellaneous⠀</span>
+            <span id="table7" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=7;screen(7);}">⠀archives⠀</span>
         </p>`,
 
         `<h2>featured</h2><div class="itemContainer">
@@ -113,6 +115,7 @@ function screen(id) {
 
         `<h2>utilities</h2><div class="itemContainer">
         <div class="item" tabindex="0" id="stickytab" onkeydown="if(event.key==='Enter'){redirect('my', 'stcikytab')}"><h3>stickytab</h3><p>a fully working New Tab page designed for productivity.</p></div>
+        <div class="item" tabindex="0" id="tofu" onkeydown="if(event.key==='Enter'){redirect('my', 'tofu')}"><h3>tofu</h3><p>web app to test embed and CORS permissions for development.</p></div>
         <div class="item" tabindex="0" id="abc" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/AskBeforeClosing.html')}"><h3>ask before closing</h3><p>a "hack" that may prevent some applications from forcefully closing browser windows.</p></div>
         <div class="item" tabindex="0" id="wakelock" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/WakeLock.html')}"><h3>wake lock</h3><p>prevent device from sleep mode. deprecated and may not work on some devices.</p></div>
         </div>`,
@@ -143,6 +146,13 @@ function screen(id) {
         <div class="item" tabindex="0" id="chopinetudes" onkeydown="if(event.key==='Enter'){redirect('my', 'chopinetudes')}"><h3>chopin études</h3><p>a music player with a complete collection for all of Chopin's Études.</p></div>
         <div class="item" tabindex="0" id="duowonton" onkeydown="if(event.key==='Enter'){redirect('my', 'duowonton')}"><h3>duowonton</h3><p>quickly review Indonesian vocabulary</p></div>
         <div class="item" tabindex="0" id="wordcount" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/WordCountTracker.html')}"><h3>word count tracker</h3><p>authors can track words they write each day. saved locally.</p></div>
+        </div>`,
+
+        `<h2>archives</h2><div class="itemContainer">
+        <div class="item" tabindex="0" id="baguette" onkeydown="if(event.key==='Enter'){redirect('web', 'https://baguette.katanya.dev')}"><h3>baguette</h3><p>a web app for managing commercial bakeries. all data saved to the cloud. publicly available as a demo, but not publicly accessible for serious use.</p></div>
+        <div class="item" tabindex="0" id="paint" onkeydown="if(event.key==='Enter'){redirect('my', 'scratchpainteditor')}"><h3>paint and illustrate</h3><p>a deprecated experiment featuring a simple but well-known paint editor.</p></div>
+        <div class="item" tabindex="0" id="notebook" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/OnlineNotebook.html')}"><h3>online notebook</h3><p>simple online notebook, saved to local browser storage. deprecated.</p></div>
+        <div class="item" tabindex="0" id="upsidedowntext" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/UpsideDownText.html')}"><h3>upside-down text</h3><p>deprecated app to generate upside-down text.</p></div>
         </div>`
     ];
     if (screens[id] === undefined) return;

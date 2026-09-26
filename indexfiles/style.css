@@ -20,7 +20,7 @@ body {
 }
 @font-face {
     font-family: "neucha";
-    src: url("/indexfiles/fonts/neucha.ttf") format ("truetype");
+    src: url("neucha.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
