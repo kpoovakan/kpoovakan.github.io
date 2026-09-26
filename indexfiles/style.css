@@ -86,6 +86,9 @@ h3 {
 .item p {
     margin-top: 0;
 }
+.item:hover {
+    cursor: pointer;
+}
 
 .info {
     background-color: var(--colorBackground);
