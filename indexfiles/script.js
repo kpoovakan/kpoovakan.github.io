@@ -69,7 +69,7 @@ function keyEnter(event, thisElement) {
 
 function toFocus(id, change) {
     const focuses = [
-        ["table1", "table2", "table3", "table4", "table5", "table6", "table7"],
+        ["table1", "table2", "table3", "table4", "table5", "table6", "table7", "table8"],
         ["harvest", "pie", "tableau", "tiles", "stickytab", "spoofmaker", "baguette"],
         ["stickytab", "tofu", "abc", "wakelock"],
         ["tableau", "caesar", "a1z26"],
@@ -100,6 +100,7 @@ function screen(id) {
             <span id="table5" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=5;screen(5);}">⠀spoof⠀</span>
             <span id="table6" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=6;screen(6);}">⠀miscellaneous⠀</span>
             <span id="table7" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=7;screen(7);}">⠀archives⠀</span>
+            <span id="table8" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=8;screen(8);}">⠀about⠀</span>
         </p>`,
 
         `<h2>featured</h2><div class="itemContainer">
@@ -153,6 +154,12 @@ function screen(id) {
         <div class="item" tabindex="0" id="paint" onkeydown="if(event.key==='Enter'){redirect('my', 'scratchpainteditor')}" onclick="redirect('my', 'scratchpainteditor')"><h3>paint and illustrate</h3><p>a deprecated experiment featuring a simple but well-known paint editor.</p></div>
         <div class="item" tabindex="0" id="notebook" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/OnlineNotebook.html')}" onclick="redirect('my', 'MiscellaneousUtilities/OnlineNotebook.html')"><h3>online notebook</h3><p>simple online notebook, saved to local browser storage. deprecated.</p></div>
         <div class="item" tabindex="0" id="upsidedowntext" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/UpsideDownText.html')}" onclick="redirect('my', 'MiscellaneousUtilities/UpsideDownText.html')"><h3>upside-down text</h3><p>deprecated app to generate upside-down text.</p></div>
+        </div>`,
+
+        `<h2>about</h2><div class="itemContainer">
+        <div class="item" tabindex="0" id="main" onkeydown="if(event.key==='Enter'){redirect('web', 'https://github.com/kpoovakan/kpoovakan.github.io#kpoovakan')}" onclick="redirect('web', 'https://github.com/kpoovakan/kpoovakan.github.io#kpoovakan')">${local("https://uploads.scratch.mit.edu/get_image/user/58105567_600x600.png")}<h3>kpoovakan</h3><p>kpoovakan is a pi enthusiast, pianist, and - most obviously - a programmer! select this section to view this website's source code.</p></div>
+        <div class="item" tabindex="0" id="scratch" onkeydown="if(event.key==='Enter'){redirect('web', 'https://scratch.mit.edu/users/kpoovakan')}" onclick="redirect('web', 'https://scratch.mit.edu/users/kpoovakan')">${local("/indexfiles/social/scratch.png")}<h3>fanbase</h3><p>view kpoovakan's profile / "fanbase" for her creations on Scratch.</p></div>
+        <div class="item" tabindex="0" id="github" onkeydown="if(event.key==='Enter'){redirect('web', 'https://github.com/kpoovakan')}" onclick="redirect('web', 'https://github.com/kpoovakan')">${local("/indexfiles/social/github.svg")}<h3>github</h3><p>view kpoovakan's profile and activity on GitHub.</p></div>
         </div>`
     ];
     if (screens[id] === undefined) return;
