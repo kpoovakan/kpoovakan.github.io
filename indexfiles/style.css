@@ -46,7 +46,7 @@ h1 {
     font-family: "neucha", serif;
     width: 100vw;
     text-align: center;
-    font-size: min(314px, 26vw);
+    font-size: min(314px, 20vw);
     text-shadow: var(--colorBackground) 0px 0px 31px;
     position: fixed;
     top: 50%;
@@ -68,6 +68,7 @@ h3 {
     text-align: center;
     width: 100%;
     display: block;
+    font-size: min(3vw, 26px);
 }
 .itemContainer {
     display: flex;
