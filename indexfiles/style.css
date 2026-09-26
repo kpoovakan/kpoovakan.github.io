@@ -26,9 +26,10 @@ body {
 }
 *:focus-visible {
     border-radius: 3px;
-    border: 3px dashed var(--colorForeground);
+    /*border: 3px dashed var(--colorForeground);*/
+    border: none;
     box-sizing: border-box;
-    outline: none;
+    outline: 3px dashed var(--colorForeground);
 }
 
 .content { /* deprecated */
@@ -78,7 +79,6 @@ h3 {
 .item {
     width: 18vw;
     box-sizing: border-box;
-    outline: none;
     border-radius: 3px;
     background-color: var(--colorBackground);
     padding: 13px;
