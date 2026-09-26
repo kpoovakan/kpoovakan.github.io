@@ -18,10 +18,10 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowDown") keyDown();
     if (e.key === "ArrowLeft") keyLeft();
     if (e.key === "ArrowRight") keyRight();
-    if (e.key === "W") keyUp();
-    if (e.key === "A") keyLeft();
-    if (e.key === "S") keyDown();
-    if (e.key === "D") keyRight();
+    if (e.key === "w") keyUp();
+    if (e.key === "a") keyLeft();
+    if (e.key === "s") keyDown();
+    if (e.key === "d") keyRight();
 });
 /*document.addEventListener("wheel", (e) => {
     e.preventDefault();
