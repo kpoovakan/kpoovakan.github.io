@@ -90,7 +90,7 @@ function toFocus(id, change) {
     const thisElement = focuses[id][globalThis.focused];
     document.getElementById(thisElement).focus();
 }
-function screen(id) {
+/*function screen(id) { // DEPRECATED
     // div opening tag template: div class="item" tabindex="0" id="IDENTIFICATION" onkeydown="if(event.key==='Enter'){redirect('my', 'PATH')}"
     const screens = [
         `<h1>kpoovakan</h1>
@@ -168,7 +168,7 @@ function screen(id) {
     content.innerHTML = screens[id];
     globalThis.currentScreen = id;
     toFocus(id, 0);
-}
+}*/
 function scratch(id) {
     const thumb = `<img src="https://uploads.scratch.mit.edu/get_image/project/${id}_360x270.png" alt="${id}" style="width: 100%;" />`;
     return thumb;
