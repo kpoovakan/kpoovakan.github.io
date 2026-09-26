@@ -70,13 +70,14 @@ function keyEnter(event, thisElement) {
 function toFocus(id, change) {
     const focuses = [
         ["table1", "table2", "table3", "table4", "table5", "table6", "table7", "table8"],
-        ["harvest", "pie", "tableau", "tiles", "stickytab", "spoofmaker", "baguette"],
+        ["featharvest", "featpie", "feattableau", "feattiles", "featstickytab", "featspoofmaker", "featbaguette"],
         ["stickytab", "tofu", "abc", "wakelock"],
         ["tableau", "caesar", "a1z26"],
         ["harvest", "scratch", "pumpkinpi"],
         ["spoofmaker", "rapidracer", "supersnake", "candyshoppe", "craftoartsupplies"],
         ["chopinetudes", "duowonton", "wordcount"],
-        ["baguette", "paint", "notebook", "upsidedowntext"]
+        ["baguette", "paint", "notebook", "upsidedowntext"],
+        ["profilemain", "profilescratch", "profilegithub"]
     ];
     if (change === 0) {
         globalThis.focused = 0;
@@ -104,14 +105,14 @@ function screen(id) {
         </p>`,
 
         `<h2>featured</h2><div class="itemContainer">
-        <div class="item" tabindex="0" id="harvest" onkeydown="if(event.key==='Enter'){redirect('my', 'harvest')}" onclick="redirect('my', 'harvest')">${scratch("1210100138")}<h3>harvest</h3><p>a fun game from Ancient Rome.</p></div>
-        <div class="item" tabindex="0" id="pie" onkeydown="if(event.key==='Enter'){redirect('scratch', '1285004431')}" onclick="redirect('scratch', '1285004431')">${scratch("1285004431")}<h3>bake a pie</h3><p>silly little pie game!</p></div>
-        <div class="item" tabindex="0" id="tableau" onkeydown="if(event.key==='Enter'){redirect('my', 'vigeneretableau')}" onclick="redirect('my', 'vigeneretableau')">${local("indexfiles/thumbs/vigeneretableau.png")}<h3>vigenère tableau</h3><p>encipher and decipher.</p></div>
-        <div class="item" tabindex="0" id="tiles" onkeydown="if(event.key==='Enter'){redirect('scratch', '1351487347')}" onclick="redirect('scratch', '1351487347')">${scratch("1351487347")}<h3>tiles</h3><p>a simple logic game featuring tiles.</p></div>
+        <div class="item" tabindex="0" id="featharvest" onkeydown="if(event.key==='Enter'){redirect('my', 'harvest')}" onclick="redirect('my', 'harvest')">${scratch("1210100138")}<h3>harvest</h3><p>a fun game from Ancient Rome.</p></div>
+        <div class="item" tabindex="0" id="featpie" onkeydown="if(event.key==='Enter'){redirect('scratch', '1285004431')}" onclick="redirect('scratch', '1285004431')">${scratch("1285004431")}<h3>bake a pie</h3><p>silly little pie game!</p></div>
+        <div class="item" tabindex="0" id="feattableau" onkeydown="if(event.key==='Enter'){redirect('my', 'vigeneretableau')}" onclick="redirect('my', 'vigeneretableau')">${local("indexfiles/thumbs/vigeneretableau.png")}<h3>vigenère tableau</h3><p>encipher and decipher.</p></div>
+        <div class="item" tabindex="0" id="feattiles" onkeydown="if(event.key==='Enter'){redirect('scratch', '1351487347')}" onclick="redirect('scratch', '1351487347')">${scratch("1351487347")}<h3>tiles</h3><p>a simple logic game featuring tiles.</p></div>
         </div><div class="itemContainer">
-        <div class="item" tabindex="0" id="stickytab" onkeydown="if(event.key==='Enter'){redirect('my', 'stickytab')}" onclick="redirect('my', 'stickytab')"><!--${local("/stickytab/favicon.png")}--><h3>stickytab</h3><p>a fully working New Tab page designed for productivity.</p></div>
-        <div class="item" tabindex="0" id="spoofmaker" onkeydown="if(event.key==='Enter'){redirect('my', 'spoofmaker')}" onclick="redirect('my', 'spoofmaker')"><h3>spoofmaker</h3><p>a not-suspicious rickroll maker.</p></div>
-        <div class="item" tabindex="0" id="baguette" onkeydown="if(event.key==='Enter'){redirect('web', 'https://baguette.katanya.dev')}" onclick="redirect('web', 'https://baguette.katanya.dev')"><h3>baguette</h3><p>a web app for managing commercial bakeries. all data saved to the cloud.</p></div>
+        <div class="item" tabindex="0" id="featstickytab" onkeydown="if(event.key==='Enter'){redirect('my', 'stickytab')}" onclick="redirect('my', 'stickytab')"><!--${local("/stickytab/favicon.png")}--><h3>stickytab</h3><p>a fully working New Tab page designed for productivity.</p></div>
+        <div class="item" tabindex="0" id="featspoofmaker" onkeydown="if(event.key==='Enter'){redirect('my', 'spoofmaker')}" onclick="redirect('my', 'spoofmaker')"><h3>spoofmaker</h3><p>a not-suspicious rickroll maker.</p></div>
+        <div class="item" tabindex="0" id="featbaguette" onkeydown="if(event.key==='Enter'){redirect('web', 'https://baguette.katanya.dev')}" onclick="redirect('web', 'https://baguette.katanya.dev')"><h3>baguette</h3><p>a web app for managing commercial bakeries. all data saved to the cloud.</p></div>
         </div>`,
 
         `<h2>utilities</h2><div class="itemContainer">
@@ -157,9 +158,9 @@ function screen(id) {
         </div>`,
 
         `<h2>about</h2><div class="itemContainer">
-        <div class="item" tabindex="0" id="main" onkeydown="if(event.key==='Enter'){redirect('web', 'https://github.com/kpoovakan/kpoovakan.github.io#kpoovakan')}" onclick="redirect('web', 'https://github.com/kpoovakan/kpoovakan.github.io#kpoovakan')">${local("https://uploads.scratch.mit.edu/get_image/user/58105567_600x600.png")}<h3>kpoovakan</h3><p>kpoovakan is a pi enthusiast, pianist, and - most obviously - a programmer! select this section to view this website's source code.</p></div>
-        <div class="item" tabindex="0" id="scratch" onkeydown="if(event.key==='Enter'){redirect('web', 'https://scratch.mit.edu/users/kpoovakan')}" onclick="redirect('web', 'https://scratch.mit.edu/users/kpoovakan')">${local("/indexfiles/social/scratch.png")}<h3>fanbase</h3><p>view kpoovakan's profile / "fanbase" for her creations on Scratch.</p></div>
-        <div class="item" tabindex="0" id="github" onkeydown="if(event.key==='Enter'){redirect('web', 'https://github.com/kpoovakan')}" onclick="redirect('web', 'https://github.com/kpoovakan')">${local("/indexfiles/social/github.svg")}<h3>github</h3><p>view kpoovakan's profile and activity on GitHub.</p></div>
+        <div class="item" tabindex="0" id="profilemain" onkeydown="if(event.key==='Enter'){redirect('web', 'https://github.com/kpoovakan/kpoovakan.github.io#kpoovakan')}" onclick="redirect('web', 'https://github.com/kpoovakan/kpoovakan.github.io#kpoovakan')">${local("https://uploads.scratch.mit.edu/get_image/user/58105567_600x600.png")}<h3>kpoovakan</h3><p>kpoovakan is a pi enthusiast, pianist, and - most obviously - a programmer! select this section to view this website's source code.</p></div>
+        <div class="item" tabindex="0" id="profilescratch" onkeydown="if(event.key==='Enter'){redirect('web', 'https://scratch.mit.edu/users/kpoovakan')}" onclick="redirect('web', 'https://scratch.mit.edu/users/kpoovakan')">${local("/indexfiles/social/scratch.png")}<h3>fanbase</h3><p>view kpoovakan's profile / "fanbase" for her creations on Scratch.</p></div>
+        <div class="item" tabindex="0" id="profilegithub" onkeydown="if(event.key==='Enter'){redirect('web', 'https://github.com/kpoovakan')}" onclick="redirect('web', 'https://github.com/kpoovakan')">${local("/indexfiles/social/github.svg")}<h3>github</h3><p>view kpoovakan's profile and activity on GitHub.</p></div>
         </div>`
     ];
     if (screens[id] === undefined) return;
