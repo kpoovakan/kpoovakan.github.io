@@ -128,10 +128,25 @@ h3 {
     padding: 13px;
     box-sizing: border-box;
     position: fixed;
+    background-image: url(/indexfiles/doradusnebula.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+    z-index: 3141592;
+    display: block;
+}
+.noscript p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: 700;
     font-size: 31px;
     text-shadow: var(--colorBackground) 0px 0px 31px;
+    margin: 0;
+    padding: 0;
 }
