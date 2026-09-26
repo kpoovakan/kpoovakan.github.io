@@ -23,7 +23,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "S") keyDown();
     if (e.key === "D") keyRight();
 });
-document.addEventListener("wheel", (e) => {
+/*document.addEventListener("wheel", (e) => {
     e.preventDefault();
     if (e.deltaY > 0) keyDown();
     if (e.deltaY < 0) keyUp();
@@ -44,7 +44,7 @@ document.addEventListener("touchmove", (e) => {
         if (difference > 0) keyUp();
         if (difference < 0) keyDown();
     }, 500);
-}, { passive: false });
+}, { passive: false });*/
 
 function keyUp() {
     //console.log("up");
@@ -176,6 +176,17 @@ function scratch(id) {
 function local(path) {
     const thumb = `<img src="${path}" alt="${path}" style="width: 100%;" />`
     return thumb;
+}
+function screen(id) {
+    const screens = ["landing", "featured", "utilities", "cryptanalysis" ,"games", "spoof", "miscellaneous", "archives", "about"];
+    if (screens[id] === undefined) return;
+    const div = document.getElementById(screens[id]);
+    div.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+    globalThis.currentScreen = id;
+    toFocus(id, 0);
 }
 
 // types: scratch, web, my

@@ -11,6 +11,7 @@
     <script src="/indexfiles/script.js" defer></script>
   </head>
   <body>
+    <div class="background"></div><!-- this div is the background and must remain at the top of the body tag at all times to prevent stacking bugs -->
     <p class="info">
         <img src="/indexfiles/updown.svg" alt="up and down arrow keys" />⠀to navigate website⠀⠀⠀
         <img src="/indexfiles/side.svg" alt="right and left arrow keys" />⠀to navigate section⠀⠀⠀
@@ -18,17 +19,19 @@
     </p>
     <!--<div id="content"></div>-->
     <div id="landing">
-      <h1>kpoovakan</h1>
-        <p class="tableContents">
-            <span id="table1" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=1;screen(1);}">⠀featured⠀</span>
-            <span id="table2" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=2;screen(2);}">⠀utilities⠀</span>
-            <span id="table3" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=3;screen(3);}">⠀cryptanalysis⠀</span>
-            <span id="table4" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=4;screen(4);}">⠀games⠀</span>
-            <span id="table5" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=5;screen(5);}">⠀spoof⠀</span>
-            <span id="table6" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=6;screen(6);}">⠀miscellaneous⠀</span>
-            <span id="table7" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=7;screen(7);}">⠀archives⠀</span>
-            <span id="table8" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=8;screen(8);}">⠀about⠀</span>
-        </p>
+        <div class="hContainer">
+            <h1>kpoovakan</h1>
+            <p class="tableContents">
+                <span id="table1" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=1;screen(1);}">⠀featured⠀</span>
+                <span id="table2" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=2;screen(2);}">⠀utilities⠀</span>
+                <span id="table3" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=3;screen(3);}">⠀cryptanalysis⠀</span>
+                <span id="table4" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=4;screen(4);}">⠀games⠀</span>
+                <span id="table5" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=5;screen(5);}">⠀spoof⠀</span>
+                <span id="table6" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=6;screen(6);}">⠀miscellaneous⠀</span>
+                <span id="table7" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=7;screen(7);}">⠀archives⠀</span>
+                <span id="table8" tabindex="0" onkeydown="if(event.key==='Enter'){globalThis.currentScreen=8;screen(8);}">⠀about⠀</span>
+            </p>
+        </div>
     </div>
     <div id="featured">
         <h2>featured</h2>
