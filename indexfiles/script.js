@@ -103,56 +103,56 @@ function screen(id) {
         </p>`,
 
         `<h2>featured</h2><div class="itemContainer">
-        <div class="item" tabindex="0" id="harvest" onkeydown="if(event.key==='Enter'){redirect('my', 'harvest')}">${scratch("1210100138")}<h3>harvest</h3><p>a fun game from Ancient Rome.</p></div>
-        <div class="item" tabindex="0" id="pie" onkeydown="if(event.key==='Enter'){redirect('scratch', '1285004431')}">${scratch("1285004431")}<h3>bake a pie</h3><p>silly little pie game!</p></div>
-        <div class="item" tabindex="0" id="tableau" onkeydown="if(event.key==='Enter'){redirect('my', 'vigeneretableau')}">${local("indexfiles/thumbs/vigeneretableau.png")}<h3>vigenère tableau</h3><p>encipher and decipher.</p></div>
-        <div class="item" tabindex="0" id="tiles" onkeydown="if(event.key==='Enter'){redirect('scratch', '1351487347')}">${scratch("1351487347")}<h3>tiles</h3><p>a simple logic game featuring tiles.</p></div>
+        <div class="item" tabindex="0" id="harvest" onkeydown="if(event.key==='Enter'){redirect('my', 'harvest')}" onclick="redirect('my', 'harvest')">${scratch("1210100138")}<h3>harvest</h3><p>a fun game from Ancient Rome.</p></div>
+        <div class="item" tabindex="0" id="pie" onkeydown="if(event.key==='Enter'){redirect('scratch', '1285004431')}" onclick="redirect('scratch', '1285004431')">${scratch("1285004431")}<h3>bake a pie</h3><p>silly little pie game!</p></div>
+        <div class="item" tabindex="0" id="tableau" onkeydown="if(event.key==='Enter'){redirect('my', 'vigeneretableau')}" onclick="redirect('my', 'vigeneretableau')">${local("indexfiles/thumbs/vigeneretableau.png")}<h3>vigenère tableau</h3><p>encipher and decipher.</p></div>
+        <div class="item" tabindex="0" id="tiles" onkeydown="if(event.key==='Enter'){redirect('scratch', '1351487347')}" onclick="redirect('scratch', '1351487347')">${scratch("1351487347")}<h3>tiles</h3><p>a simple logic game featuring tiles.</p></div>
         </div><div class="itemContainer">
-        <div class="item" tabindex="0" id="stickytab" onkeydown="if(event.key==='Enter'){redirect('my', 'stickytab')}"><!--${local("/stickytab/favicon.png")}--><h3>stickytab</h3><p>a fully working New Tab page designed for productivity.</p></div>
-        <div class="item" tabindex="0" id="spoofmaker" onkeydown="if(event.key==='Enter'){redirect('my', 'spoofmaker')}"><h3>spoofmaker</h3><p>a not-suspicious rickroll maker.</p></div>
-        <div class="item" tabindex="0" id="baguette" onkeydown="if(event.key==='Enter'){redirect('web', 'https://baguette.katanya.dev')}"><h3>baguette</h3><p>a web app for managing commercial bakeries. all data saved to the cloud.</p></div>
+        <div class="item" tabindex="0" id="stickytab" onkeydown="if(event.key==='Enter'){redirect('my', 'stickytab')}" onclick="redirect('my', 'stickytab')"><!--${local("/stickytab/favicon.png")}--><h3>stickytab</h3><p>a fully working New Tab page designed for productivity.</p></div>
+        <div class="item" tabindex="0" id="spoofmaker" onkeydown="if(event.key==='Enter'){redirect('my', 'spoofmaker')}" onclick="redirect('my', 'spoofmaker')"><h3>spoofmaker</h3><p>a not-suspicious rickroll maker.</p></div>
+        <div class="item" tabindex="0" id="baguette" onkeydown="if(event.key==='Enter'){redirect('web', 'https://baguette.katanya.dev')}" onclick="redirect('web', 'https://baguette.katanya.dev')"><h3>baguette</h3><p>a web app for managing commercial bakeries. all data saved to the cloud.</p></div>
         </div>`,
 
         `<h2>utilities</h2><div class="itemContainer">
-        <div class="item" tabindex="0" id="stickytab" onkeydown="if(event.key==='Enter'){redirect('my', 'stcikytab')}"><h3>stickytab</h3><p>a fully working New Tab page designed for productivity.</p></div>
-        <div class="item" tabindex="0" id="tofu" onkeydown="if(event.key==='Enter'){redirect('my', 'tofu')}"><h3>tofu</h3><p>web app to test embed and CORS permissions for development.</p></div>
-        <div class="item" tabindex="0" id="abc" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/AskBeforeClosing.html')}"><h3>ask before closing</h3><p>a "hack" that may prevent some applications from forcefully closing browser windows.</p></div>
-        <div class="item" tabindex="0" id="wakelock" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/WakeLock.html')}"><h3>wake lock</h3><p>prevent device from sleep mode. deprecated and may not work on some devices.</p></div>
+        <div class="item" tabindex="0" id="stickytab" onkeydown="if(event.key==='Enter'){redirect('my', 'stickytab')}" onclick="redirect('my', 'stickytab')"><h3>stickytab</h3><p>a fully working New Tab page designed for productivity.</p></div>
+        <div class="item" tabindex="0" id="tofu" onkeydown="if(event.key==='Enter'){redirect('my', 'tofu')}" onclick="redirect('my', 'tofu')"><h3>tofu</h3><p>web app to test embed and CORS permissions for development.</p></div>
+        <div class="item" tabindex="0" id="abc" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/AskBeforeClosing.html')}" onclick="redirect('my', 'MiscellaneousUtilities/AskBeforeClosing.html')"><h3>ask before closing</h3><p>a "hack" that may prevent some applications from forcefully closing browser windows.</p></div>
+        <div class="item" tabindex="0" id="wakelock" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/WakeLock.html')}" onclick="redirect('my', 'MiscellaneousUtilities/WakeLock.html')"><h3>wake lock</h3><p>prevent device from sleep mode. deprecated and may not work on some devices.</p></div>
         </div>`,
 
         `<h2>cryptanalysis</h2><div class="itemContainer">
-        <div class="item" tabindex="0" id="tableau" onkeydown="if(event.key==='Enter'){redirect('my', 'vigeneretableau')}">${local("indexfiles/thumbs/vigeneretableau.png")}<h3>vigenère tableau</h3><p>encipher and decipher.</p></div>
+        <div class="item" tabindex="0" id="tableau" onkeydown="if(event.key==='Enter'){redirect('my', 'vigeneretableau')}" onclick="redirect('my', 'vigeneretableau')">${local("indexfiles/thumbs/vigeneretableau.png")}<h3>vigenère tableau</h3><p>encipher and decipher.</p></div>
         </div><div class="itemContainer">
-        <div class="item" tabindex="0" id="caesar" onkeydown="if(event.key==='Enter'){redirect('my', 'caesarcipher')}"><h3>caesar cipher</h3><p>a monoalphabetic substitution cipher.</p></div>
-        <div class="item" tabindex="0" id="a1z26" onkeydown="if(event.key==='Enter'){redirect('my', 'a1z26')}"><h3>A1Z26</h3><p>a simple, well-known monoalphabetic substitution cipher.</p></div>
+        <div class="item" tabindex="0" id="caesar" onkeydown="if(event.key==='Enter'){redirect('my', 'caesarcipher')}" onclick="redirect('my', 'caesarcipher')"><h3>caesar cipher</h3><p>a monoalphabetic substitution cipher.</p></div>
+        <div class="item" tabindex="0" id="a1z26" onkeydown="if(event.key==='Enter'){redirect('my', 'a1z26')}" onclick="redirect('my', 'a1z26')"><h3>A1Z26</h3><p>a simple, well-known monoalphabetic substitution cipher.</p></div>
         </div>`,
 
         `<h2>games</h2><div class="itemContainer">
-        <div class="item" tabindex="0" id="harvest" onkeydown="if(event.key==='Enter'){redirect('my', 'harvest')}">${scratch("1210100138")}<h3>harvest</h3><p>a fun game from Ancient Rome.</p></div>
-        <div class="item" tabindex="0" id="scratch" onkeydown="if(event.key==='Enter'){redirect('web', 'https://scratch.mit.edu/users/kpoovakan')}">${local("https://uploads.scratch.mit.edu/get_image/user/58105567_600x600.png")}<h3>fanbase</h3><p>view kpoovakan's profile / "fanbase" for her creations in neophyte programming languages.</p></div>
+        <div class="item" tabindex="0" id="harvest" onkeydown="if(event.key==='Enter'){redirect('my', 'harvest')}" onclick="redirect('my', 'harvest')">${scratch("1210100138")}<h3>harvest</h3><p>a fun game from Ancient Rome.</p></div>
+        <div class="item" tabindex="0" id="scratch" onkeydown="if(event.key==='Enter'){redirect('web', 'https://scratch.mit.edu/users/kpoovakan')}" onclick="redirect('web', 'https://scratch.mit.edu/users/kpoovakan')">${local("https://uploads.scratch.mit.edu/get_image/user/58105567_600x600.png")}<h3>fanbase</h3><p>view kpoovakan's profile / "fanbase" for her creations in neophyte programming languages.</p></div>
         </div><div class="itemContainer">
-        <div class="item" tabindex="0" id="pumpkinpi" onkeydown="if(event.key==='Enter'){redirect('my', 'pumpkinpi')}"><h3>A1Z26</h3><p>test your memory of the digits of pi.</p></div>
+        <div class="item" tabindex="0" id="pumpkinpi" onkeydown="if(event.key==='Enter'){redirect('my', 'pumpkinpi')}" onclick="redirect('my', 'pumpkinpi')"><h3>pumpkin pi</h3><p>test your memory of the digits of pi.</p></div>
         </div>`,
 
         `<h2>spoof</h2><div class="itemContainer">
-        <div class="item" tabindex="0" id="spoofmaker" onkeydown="if(event.key==='Enter'){redirect('my', 'spoofmaker')}"><h3>spoofmaker</h3><p>a not-suspicious rickroll maker.</p></div>
-        <div class="item" tabindex="0" id="rapidracer" onkeydown="if(event.key==='Enter'){redirect('my', 'rapidracer')}"><h3>rapid racer</h3><p>completed spoof</p></div>
-        <div class="item" tabindex="0" id="supersnake" onkeydown="if(event.key==='Enter'){redirect('my', 'supersnake')}"><h3>super snake</h3><p>completed spoof</p></div>
-        <div class="item" tabindex="0" id="candyshoppe" onkeydown="if(event.key==='Enter'){redirect('my', 'candyshoppe')}"><h3>the candy shoppe</h3><p>completed spoof</p></div>
-        <div class="item" tabindex="0" id="craftoartsupplies" onkeydown="if(event.key==='Enter'){redirect('my', 'craftoartsupplies')}"><h3>crafto art supplies</h3><p>completed spoof</p></div>
+        <div class="item" tabindex="0" id="spoofmaker" onkeydown="if(event.key==='Enter'){redirect('my', 'spoofmaker')}" onclick="redirect('my', 'spoofmaker')"><h3>spoofmaker</h3><p>a not-suspicious rickroll maker.</p></div>
+        <div class="item" tabindex="0" id="rapidracer" onkeydown="if(event.key==='Enter'){redirect('my', 'rapidracer')}" onclick="redirect('my', 'rapidracer')"><h3>rapid racer</h3><p>completed spoof</p></div>
+        <div class="item" tabindex="0" id="supersnake" onkeydown="if(event.key==='Enter'){redirect('my', 'supersnake')}" onclick="redirect('my', 'supersnake')"><h3>super snake</h3><p>completed spoof</p></div>
+        <div class="item" tabindex="0" id="candyshoppe" onkeydown="if(event.key==='Enter'){redirect('my', 'candyshoppe')}" onclick="redirect('my', 'candyshoppe')"><h3>the candy shoppe</h3><p>completed spoof</p></div>
+        <div class="item" tabindex="0" id="craftoartsupplies" onkeydown="if(event.key==='Enter'){redirect('my', 'craftoartsupplies')}" onclick="redirect('my', 'craftoartsupplies')"><h3>crafto art supplies</h3><p>completed spoof</p></div>
         </div>`,
 
         `<h2>miscellaneous</h2><div class="itemContainer">
-        <div class="item" tabindex="0" id="chopinetudes" onkeydown="if(event.key==='Enter'){redirect('my', 'chopinetudes')}"><h3>chopin études</h3><p>a music player with a complete collection for all of Chopin's Études.</p></div>
-        <div class="item" tabindex="0" id="duowonton" onkeydown="if(event.key==='Enter'){redirect('my', 'duowonton')}"><h3>duowonton</h3><p>quickly review Indonesian vocabulary</p></div>
-        <div class="item" tabindex="0" id="wordcount" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/WordCountTracker.html')}"><h3>word count tracker</h3><p>authors can track words they write each day. saved locally.</p></div>
+        <div class="item" tabindex="0" id="chopinetudes" onkeydown="if(event.key==='Enter'){redirect('my', 'chopinetudes')}" onclick="redirect('my', 'chopinetudes')"><h3>chopin études</h3><p>a music player with a complete collection for all of Chopin's Études.</p></div>
+        <div class="item" tabindex="0" id="duowonton" onkeydown="if(event.key==='Enter'){redirect('my', 'duowonton')}" onclick="redirect('my', 'duowonton')"><h3>duowonton</h3><p>quickly review Indonesian vocabulary</p></div>
+        <div class="item" tabindex="0" id="wordcount" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/WordCountTracker.html')}" onclick="redirect('my', 'MiscellaneousUtilities/WordCountTracker.html')"><h3>word count tracker</h3><p>authors can track words they write each day. saved locally.</p></div>
         </div>`,
 
         `<h2>archives</h2><div class="itemContainer">
-        <div class="item" tabindex="0" id="baguette" onkeydown="if(event.key==='Enter'){redirect('web', 'https://baguette.katanya.dev')}"><h3>baguette</h3><p>a web app for managing commercial bakeries. all data saved to the cloud. publicly available as a demo, but not publicly accessible for serious use.</p></div>
-        <div class="item" tabindex="0" id="paint" onkeydown="if(event.key==='Enter'){redirect('my', 'scratchpainteditor')}"><h3>paint and illustrate</h3><p>a deprecated experiment featuring a simple but well-known paint editor.</p></div>
-        <div class="item" tabindex="0" id="notebook" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/OnlineNotebook.html')}"><h3>online notebook</h3><p>simple online notebook, saved to local browser storage. deprecated.</p></div>
-        <div class="item" tabindex="0" id="upsidedowntext" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/UpsideDownText.html')}"><h3>upside-down text</h3><p>deprecated app to generate upside-down text.</p></div>
+        <div class="item" tabindex="0" id="baguette" onkeydown="if(event.key==='Enter'){redirect('web', 'https://baguette.katanya.dev')}" onclick="redirect('web', 'https://baguette.katanya.dev')"><h3>baguette</h3><p>a web app for managing commercial bakeries. all data saved to the cloud. publicly available as a demo, but not publicly accessible for serious use.</p></div>
+        <div class="item" tabindex="0" id="paint" onkeydown="if(event.key==='Enter'){redirect('my', 'scratchpainteditor')}" onclick="redirect('my', 'scratchpainteditor')"><h3>paint and illustrate</h3><p>a deprecated experiment featuring a simple but well-known paint editor.</p></div>
+        <div class="item" tabindex="0" id="notebook" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/OnlineNotebook.html')}" onclick="redirect('my', 'MiscellaneousUtilities/OnlineNotebook.html')"><h3>online notebook</h3><p>simple online notebook, saved to local browser storage. deprecated.</p></div>
+        <div class="item" tabindex="0" id="upsidedowntext" onkeydown="if(event.key==='Enter'){redirect('my', 'MiscellaneousUtilities/UpsideDownText.html')}" onclick="redirect('my', 'MiscellaneousUtilities/UpsideDownText.html')"><h3>upside-down text</h3><p>deprecated app to generate upside-down text.</p></div>
         </div>`
     ];
     if (screens[id] === undefined) return;
