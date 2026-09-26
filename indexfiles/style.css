@@ -16,7 +16,7 @@ body {
     overflow: hidden;
     box-sizing: border-box;
     font-family: "neucha", cursive;
-    font-size: 20px;
+    font-size: min(20px, 2.314vw);
 }
 @font-face {
     font-family: "neucha";
