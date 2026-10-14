@@ -12,6 +12,7 @@ body {
     font-family: "neucha", cursive;
     font-size: min(20px, 2.314vw);
     overflow-x: hidden;
+    overflow: hidden; /* remove this and go to tabbed class to enable clicks */
 }
 @font-face {
     font-family: "neucha";
@@ -167,4 +168,20 @@ h3 {
     text-shadow: var(--colorBackground) 0px 0px 31px;
     margin: 0;
     padding: 0;
+}
+
+
+.tabbed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: auto;
+    opacity: 0;
+    background-color: var(--colorForeground);
+    z-index: 31415926535897932384626433;
+    display: block; /* change display to none and go to body selector to enable clicks */
 }

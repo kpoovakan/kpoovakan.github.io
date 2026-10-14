@@ -1,4 +1,13 @@
 "use strict";
+
+
+// the function below can disable clicks
+window.addEventListener("mousedown", (e) => {
+    e.preventDefault();
+});
+
+
+
 /* REGULATIONS FOR ADDING NEW ITEMS
 each flexbox can have a max of 5 items. make new flexbox if required. max 2 flexboxes per section, then change to overflow version if necessary.
 add onkeydown attribute to div with script.
