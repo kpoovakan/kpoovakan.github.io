@@ -1,7 +1,7 @@
 :root {
-    --colorBackground: #373347;
-    --colorForeground: #E4DDE1;
-    --colorAccent: #C7A8AC;
+    --colorBackground: #433B37;
+    --colorForeground: #E7DDDA;
+    --colorAccent: #CCBEB8;
 }
 body {
     margin: 0;
@@ -28,10 +28,10 @@ body {
 }
 .background {
     display: block;
-    background-image: url(/indexfiles/doradusnebula.jpg);
+    background-image: url(/indexfiles/background.png);
     background-size: cover;
     height: 100vh;
-    background-position: center;
+    background-position: center top;
     box-sizing: border-box;
     width: 100vw;
     position: fixed;
