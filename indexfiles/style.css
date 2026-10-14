@@ -135,6 +135,9 @@ h3 {
     margin: 0;
     padding: 13px;
 }
+.tableContents span:hover {
+    cursor: pointer;
+}
 
 .noscript {
     width: 100vw;
