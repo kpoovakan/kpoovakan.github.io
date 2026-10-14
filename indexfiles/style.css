@@ -1,7 +1,7 @@
 :root {
     --colorBackground: #433B37;
     --colorForeground: #E7DDDA;
-    --colorAccent: #CCBEB8;
+    --colorAccent: #F7F4F3;
 }
 body {
     margin: 0;
@@ -21,10 +21,10 @@ body {
 }
 *:focus-visible {
     border-radius: 3px;
-    /*border: 3px dashed var(--colorForeground);*/
+    /*border: 3px dashed var(--colorAccent);*/
     border: none;
     box-sizing: border-box;
-    outline: 3px dashed var(--colorForeground);
+    outline: 3px dashed var(--colorAccent);
 }
 .background {
     display: block;
