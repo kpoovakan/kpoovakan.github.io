@@ -13,6 +13,7 @@ body {
     font-size: min(20px, 2.314vw);
     overflow-x: hidden;
     overflow: hidden; /* remove this and go to tabbed class to enable clicks */
+    cursor: none; /* also remove this to enable clicks */
 }
 @font-face {
     font-family: "neucha";
