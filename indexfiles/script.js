@@ -2,9 +2,9 @@
 
 
 // the function below can disable clicks
-window.addEventListener("mousedown", (e) => {
+/* window.addEventListener("mousedown", (e) => {
     e.preventDefault();
-});
+}); */
 
 
 

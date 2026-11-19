@@ -12,8 +12,8 @@ body {
     font-family: "neucha", cursive;
     font-size: min(20px, 2.314vw);
     overflow-x: hidden;
-    overflow: hidden; /* remove this and go to tabbed class to enable clicks */
-    cursor: none; /* also remove this to enable clicks */
+    /* overflow: hidden;
+    cursor: none; */
 }
 @font-face {
     font-family: "neucha";
@@ -184,5 +184,5 @@ h3 {
     opacity: 0;
     background-color: var(--colorForeground);
     z-index: 31415926535897932384626433;
-    display: block; /* change display to none and go to body selector to enable clicks */
+    display: none; /* change display to block and go to body selector to disable clicks */
 }
