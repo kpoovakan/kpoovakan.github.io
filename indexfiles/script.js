@@ -50,11 +50,11 @@ function toFocus(id, change) {
     const focuses = [
         ["table1", "table2", "table3", "table4", "table5", "table6", "table7", "table8"],
         ["featharvest", "featpie", "feattableau", "feattiles", "featstickytab", "featspoofmaker", "featbaguette"],
-        ["stickytab", "bypass", "tofu", "abc", "wakelock"],
-        ["tableau", "caesar", "a1z26"],
+        ["stickytab", "bypass", "tofu", "abc", "notemouse", "wakelock"],
+        ["tableau", "zerosnones", "caesar", "a1z26"],
         ["harvest", "scratch", "pumpkinpi"],
         ["spoofmaker", "rapidracer", "supersnake", "candyshoppe", "craftoartsupplies"],
-        ["chopinetudes", "duowonton", "wordcount"],
+        ["chopinetudes", "banana", "duowonton", "wordcount"],
         ["baguette", "paint", "notebook", "upsidedowntext"],
         ["profilemain", "profilescratch", "profilegithub"]
     ];
